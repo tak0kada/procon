@@ -1,0 +1,10 @@
+from __future__ import absolute_import
+from . import player
+from . import game
+
+def player(hand):
+    player = player.Player()
+    player.set_hand(hand)
+    return player
+
+game = game.Game
