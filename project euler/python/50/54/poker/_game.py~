@@ -1,9 +1,0 @@
-class _Game(object):
-    def __init__(self):
-        self.players = []
-
-    def set_player(self, *argv):
-        self.players.append(argv)
-
-    def winner(self):
-        return self.players.index(max(self.players))
