@@ -31,20 +31,20 @@ int solve()
     int goal = max(abs(goal_x), abs(goal_y));
     
     // algorithm
-    int max_d = *max_element(d.begin(), d.end());
     if (goal == 0)
         return 0;
     else
     {
-        if (max_d == 0)
-            return -1;
+        int max_d = *max_element(d.begin(), d.end());
         if (goal >= max_d)
             return (goal / max_d) + (goal % max_d == 0 ? 0 : 1);
         else
         {
             for (const auto& i: d)
+            {
                 if (i == goal)
                     return 1;
+            }
             return 2;
         }
     }
