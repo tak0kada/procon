@@ -21,4 +21,5 @@ int main(void)
     string input;
     cin >> input;
     cout << solve(input) << endl;
+    return 0;
 }
